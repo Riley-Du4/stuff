@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #555;
+            margin: 5px 0;
+        }
+        .product span {
+            display: block;
+            color: #27ae60;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product Gallery</h1>
+    </header>
+    <main>
+        <div class="gallery">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="https://your-s3-bucket.s3.amazonaws.com/product1.jpg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>A great product for everyday use.</p>
+                <span>$25.00</span>
+            </div>
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="https://your-s3-bucket.s3.amazonaws.com/product2.jpg" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>High quality and durable.</p>
+                <span>$40.00</span>
+            </div>
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="https://your-s3-bucket.s3.amazonaws.com/product3.jpg" alt="Product 3">
+                <h2>Product 3</h2>
+                <p>Stylish and affordable.</p>
+                <span>$30.00</span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
